@@ -1,0 +1,6 @@
+[submodule "assets/styles"]
+	path = assets/styles
+	url = https://github.com/PrioriLabs/styles.git
+[submodule "assets/master-styles"]
+	path = assets/master-styles
+	url = https://github.com/PrioriLabs/master-styles.git

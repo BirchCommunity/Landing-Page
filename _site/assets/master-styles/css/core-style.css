@@ -1,0 +1,70 @@
+
+
+/* Fonts and Colors */
+@import url('https://fonts.googleapis.com/css?family=Rokkitt:300|Open+Sans');
+
+* {
+    --color-dark: #09266E;
+    --color-dark-text: #FFFFFF;
+    --color-light: #FFFFFF;
+    --color-light-text: #000000;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--color-light-text);
+    font-family: "Open Sans", sans-serif;
+    text-align: center;
+}
+
+p {
+    color: var(--color-light-text);
+    font-family: "Rokkitt", serif;
+    text-align: justify;
+    margin: 10px
+}
+
+ul, ol{
+    color: var(--color-light-text);
+    font-family: "Rokkitt", serif;
+    text-align: left;
+}
+
+/* Dark Styles */
+.dark {
+    background-color: var(--color-dark);
+}
+
+.dark-gradient {
+
+    /* IE10+ */ 
+    background-image: -ms-linear-gradient(bottom left, #09266E 20%, #0C3496 60%, #3366FF 100%);
+
+    /* Mozilla Firefox */ 
+    background-image: -moz-linear-gradient(bottom left, #09266E 20%, #0C3496 60%, #3366FF 100%);
+
+    /* Opera */ 
+    background-image: -o-linear-gradient(bottom left, #09266E 20%, #0C3496 60%, #3366FF 100%);
+
+    /* Webkit (Safari/Chrome 10) */ 
+    background-image: -webkit-gradient(linear, left bottom, right top, color-stop(20, #09266E), color-stop(60, #0C3496), color-stop(100, #3366FF));
+
+    /* Webkit (Chrome 11+) */ 
+    background-image: -webkit-linear-gradient(bottom left, #09266E 20%, #0C3496 60%, #3366FF 100%);
+
+    /* W3C Markup */ 
+    background-image: linear-gradient(to top right, #09266E 20%, #0C3496 60%, #3366FF 100%);
+}
+
+.dark h1, .dark h2, .dark h3, .dark h4, .dark h5, .dark h6 {
+    color: var(--color-dark-text);
+    font-family: "Open Sans", sans-serif;
+}
+
+.dark p {
+    color: var(--color-dark-text);
+    font-family: "Rokkitt", serif;
+}
+.dark ul, .dark ol, .dark li {
+    color: var(--color-dark-text);
+    font-family: "Rokkitt", serif;
+}
