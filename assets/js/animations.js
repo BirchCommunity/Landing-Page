@@ -1,10 +1,15 @@
 // Make sure we don't make the canvas wider than the screen
 var side = $(document).width();
-if (side > 400) {
+console.log(side);
+
+if (side > 758) {
     side = 400;
 } else {
-    side = side - (side/10)
+    side = side/2;
 }
+
+console.log(side);
+
 // Size of the orbs traveling between the nodes
 let orb_size = side/20;
 
@@ -57,6 +62,7 @@ PIXI.loader
   .load(createScene);
 
 
+// Creates the scene
 function createScene() {
     let logo = new PIXI.Sprite(PIXI.loader.resources["assets/master-styles/logos/whitelogo.png"].texture);
     logo.width = side;
@@ -69,11 +75,13 @@ function createScene() {
     loop();
 }
 
+// Loop that plays the animation
 function loop() {
     requestAnimationFrame(loop);
     render();
 }
 
+// Renders the scene at every frame
 function render(){
     // Randomly create new orbs
     if (getRandomInt(10000) % 47 == 0) {
