@@ -8,22 +8,21 @@ h1, h2, h3, h4, h5, h6 {
 * Header styles 
 */
 .dark-header {
-  /* IE10+ */
-  background-image: -ms-linear-gradient(bottom left, #09266E 20%, #0C3496 60%, #3366FF 100%);
-  /* Mozilla Firefox */
-  background-image: -moz-linear-gradient(bottom left, #09266E 20%, #0C3496 60%, #3366FF 100%);
-  /* Opera */
-  background-image: -o-linear-gradient(bottom left, #09266E 20%, #0C3496 60%, #3366FF 100%);
-  /* Webkit (Safari/Chrome 10) */
-  background-image: -webkit-gradient(linear, left bottom, right top, color-stop(20, #09266E), color-stop(60, #0C3496), color-stop(100, #3366FF));
-  /* Webkit (Chrome 11+) */
-  background-image: -webkit-linear-gradient(bottom left, #09266E 20%, #0C3496 60%, #3366FF 100%);
-  /* W3C Markup */
-  background-image: linear-gradient(to top right, #09266E 20%, #0C3496 60%, #3366FF 100%);
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#eeeeee+0,cccccc+100;Gren+3D */
+  background: #eeeeee;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #eeeeee 0%, #cccccc 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #eeeeee 0%, #cccccc 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #eeeeee 0%, #cccccc 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#cccccc',GradientType=0 );
+  /* IE6-9 */
   height: 100vh;
   text-align: center; }
   .dark-header h1, .dark-header h2, .dark-header h3, .dark-header h4, .dark-header h5, .dark-header h6 {
-    color: white;
+    color: black;
     text-align: center; }
   .dark-header img {
     display: inline-block; }
