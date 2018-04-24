@@ -12,23 +12,18 @@ h1, h2, h3, h4, h5, h6 {
 */
 .dark-header {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#eeeeee+0,cccccc+100;Gren+3D */
-  background: #eeeeee;
-  /* Old browsers */
-  background: -moz-linear-gradient(top, #eeeeee 0%, #cccccc 100%);
-  /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, #eeeeee 0%, #cccccc 100%);
-  /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom, #eeeeee 0%, #cccccc 100%);
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#cccccc',GradientType=0 );
-  /* IE6-9 */
+  background-image: url("/assets/img/birches.jpg");
+  background-size: cover;
   height: 100vh;
   text-align: center; }
   .dark-header h1, .dark-header h2, .dark-header h3, .dark-header h4, .dark-header h5, .dark-header h6 {
     color: black;
-    text-align: center; }
+    text-align: center;
+    font-family: "Open Sans", sans-serif; }
   .dark-header img {
     display: inline-block;
     margin: 40px; }
   .dark-header .content-container {
-    margin: 0px; }
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 20px; }
