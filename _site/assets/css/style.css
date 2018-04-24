@@ -13,7 +13,7 @@ h1, h2, h3, h4, h5, h6 {
 .dark-header {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#eeeeee+0,cccccc+100;Gren+3D */
   background: white;
-  background: linear-gradient(180deg, white 0%, #ffe0aa 72%, #d4ad6a 100%);
+  background: linear-gradient(180deg, white 0%, #cfcfcf 72%, #858585 100%);
   height: 100vh;
   text-align: center; }
   .dark-header h1, .dark-header h2, .dark-header h3, .dark-header h4, .dark-header h5, .dark-header h6 {
