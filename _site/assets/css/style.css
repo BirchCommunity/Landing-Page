@@ -1,27 +1,243 @@
 /* Fonts and Colors */
-@import url("https://fonts.googleapis.com/css?family=Rokkitt:300|Open+Sans");
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600");
+body {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400; }
+
 h1, h2, h3, h4, h5, h6 {
-  margin: 10px;
-  font-family: "Open Sans", sans-serif; }
+  text-align: center;
+  font-weight: 400; }
 
 .full-height {
   height: 100vh; }
+
+.section-title {
+  padding-top: 30px;
+  margin-bottom: 0px; }
 
 /*
 * Header styles 
 */
 .dark-header {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#eeeeee+0,cccccc+100;Gren+3D */
-  background: white;
-  background: linear-gradient(180deg, white 0%, #cfcfcf 72%, #858585 100%);
+  background: #ff7600;
+  background: linear-gradient(90deg, #ff7600 0%, #ff8821 75%, #ffa151 100%);
   height: 100vh;
+  width: 100%;
   text-align: center; }
   .dark-header h1, .dark-header h2, .dark-header h3, .dark-header h4, .dark-header h5, .dark-header h6 {
-    color: black;
+    color: white;
     text-align: center;
-    font-family: "Open Sans", sans-serif; }
-  .dark-header img {
-    display: inline-block;
-    margin: 40px; }
-  .dark-header .content-container {
-    padding: 20px; }
+    font-family: 'Poppins', sans-serif; }
+  .dark-header .title {
+    text-align: center; }
+    .dark-header .title h1 {
+      font-size: 5em;
+      font-weight: 600;
+      width: 100%; }
+    @media screen and (max-width: 767px) {
+      .dark-header .title {
+        font-size: .7em; } }
+  .dark-header .title-wrapper {
+    display: inline-block; }
+
+.problem {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  min-height: 50vh;
+  text-align: center; }
+  .problem .problem-text {
+    vertical-align: middle; }
+  .problem .social-channels {
+    margin: 10px;
+    max-width: 70%; }
+
+.problem2 {
+  padding-top: 30px;
+  padding-bottom: 3px;
+  min-height: 50vh;
+  text-align: center;
+  background-color: #0E3BAC;
+  color: white;
+  width: 100%; }
+  .problem2 .metric {
+    margin: 30px; }
+    .problem2 .metric h1 {
+      font-size: 3em; }
+
+.footer {
+  background-color: white;
+  text-align: center; }
+  .footer i {
+    color: #ff7600;
+    font-size: 20px; }
+  .footer h6 {
+    margin: 30px; }
+
+.solution {
+  height: 75vh; }
+  .solution h1 {
+    margin: 20px;
+    font-size: 4em; }
+  @media screen and (max-width: 767px) {
+    .solution {
+      font-size: .7em; } }
+
+.roadmap {
+  background: #0E3BAC;
+  color: white;
+  min-height: 75vh; }
+  .roadmap .timeline-wrap {
+    /*
+    * demo page
+    */ }
+    .roadmap .timeline-wrap .timeline {
+      --uiTimelineMainColor: #ff7600;
+      --uiTimelineSecondaryColor: var(--timelineSecondaryColor, #fff);
+      position: relative;
+      padding-top: 3rem;
+      padding-bottom: 3rem; }
+    .roadmap .timeline-wrap .timeline:before {
+      content: "";
+      width: 4px;
+      height: 100%;
+      background-color: var(--uiTimelineMainColor);
+      position: absolute;
+      top: 0; }
+    .roadmap .timeline-wrap .timeline__group {
+      position: relative; }
+    .roadmap .timeline-wrap .timeline__group:not(:first-of-type) {
+      margin-top: 4rem; }
+    .roadmap .timeline-wrap .timeline__year {
+      padding: .5rem 1.5rem;
+      color: var(--uiTimelineSecondaryColor);
+      background-color: var(--uiTimelineMainColor);
+      position: absolute;
+      left: 0;
+      top: 0; }
+    .roadmap .timeline-wrap .timeline__content {
+      color: black; }
+    .roadmap .timeline-wrap .timeline__box {
+      position: relative; }
+    .roadmap .timeline-wrap .timeline__box:not(:last-of-type) {
+      margin-bottom: 30px; }
+    .roadmap .timeline-wrap .timeline__box:before {
+      content: "";
+      width: 100%;
+      height: 2px;
+      background-color: var(--uiTimelineMainColor);
+      position: absolute;
+      left: 0;
+      z-index: -1; }
+    .roadmap .timeline-wrap .timeline__date {
+      min-width: 65px;
+      position: absolute;
+      left: 0;
+      box-sizing: border-box;
+      padding: .5rem 1.5rem;
+      text-align: center;
+      background-color: var(--uiTimelineMainColor);
+      color: var(--uiTimelineSecondaryColor); }
+    .roadmap .timeline-wrap .timeline__day {
+      font-size: 2rem;
+      font-weight: 700;
+      display: block; }
+    .roadmap .timeline-wrap .timeline__month {
+      display: block;
+      font-size: .8em;
+      text-transform: uppercase; }
+    .roadmap .timeline-wrap .timeline__post {
+      padding: 1.5rem 2rem;
+      border-radius: 2px;
+      border-left: 3px solid var(--uiTimelineMainColor);
+      box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.24);
+      background-color: var(--uiTimelineSecondaryColor); }
+    @media screen and (min-width: 641px) {
+      .roadmap .timeline-wrap .timeline:before {
+        left: 30px; }
+      .roadmap .timeline-wrap .timeline__group {
+        padding-top: 55px; }
+      .roadmap .timeline-wrap .timeline__box {
+        padding-left: 80px; }
+      .roadmap .timeline-wrap .timeline__box:before {
+        top: 50%;
+        transform: translateY(-50%); }
+      .roadmap .timeline-wrap .timeline__date {
+        top: 50%;
+        margin-top: -27px; } }
+    @media screen and (max-width: 640px) {
+      .roadmap .timeline-wrap .timeline:before {
+        left: 0; }
+      .roadmap .timeline-wrap .timeline__group {
+        padding-top: 40px; }
+      .roadmap .timeline-wrap .timeline__box {
+        padding-left: 20px;
+        padding-top: 70px; }
+      .roadmap .timeline-wrap .timeline__box:before {
+        top: 90px; }
+      .roadmap .timeline-wrap .timeline__date {
+        top: 0; } }
+    .roadmap .timeline-wrap .timeline {
+      --timelineMainColor: #4557bb;
+      font-size: 16px; }
+    @media screen and (min-width: 768px) {
+      .roadmap .timeline-wrap html {
+        font-size: 62.5%; } }
+    @media screen and (max-width: 767px) {
+      .roadmap .timeline-wrap html {
+        font-size: 55%; } }
+    @media screen and (min-width: 768px) {
+      .roadmap .timeline-wrap html {
+        font-size: 62.5%; } }
+    @media screen and (max-width: 767px) {
+      .roadmap .timeline-wrap html {
+        font-size: 50%; } }
+    .roadmap .timeline-wrap body {
+      font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Open Sans, Ubuntu, Fira Sans, Helvetica Neue, sans-serif;
+      font-size: 1.6rem;
+      color: #222;
+      background-color: #f0f0f0;
+      margin: 0;
+      -webkit-overflow-scrolling: touch;
+      overflow-y: scroll; }
+    .roadmap .timeline-wrap p {
+      margin-top: 0;
+      margin-bottom: 1.5rem;
+      line-height: 1.5; }
+    .roadmap .timeline-wrap p:last-child {
+      margin-bottom: 0; }
+    .roadmap .timeline-wrap .page {
+      min-height: 75vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around; }
+    .roadmap .timeline-wrap .page__demo {
+      flex-grow: 1; }
+    .roadmap .timeline-wrap .main-container {
+      max-width: 960px;
+      padding-left: 2rem;
+      padding-right: 2rem;
+      margin-left: auto;
+      margin-right: auto; }
+    .roadmap .timeline-wrap .page__container {
+      padding-top: 30px;
+      padding-bottom: 30px;
+      max-width: 800px; }
+    .roadmap .timeline-wrap .footer {
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      text-align: center;
+      font-size: 1.4rem; }
+    .roadmap .timeline-wrap .footer__link {
+      text-decoration: none;
+      color: inherit; }
+    @media screen and (min-width: 361px) {
+      .roadmap .timeline-wrap .footer__container {
+        display: flex;
+        justify-content: space-between; } }
+    @media screen and (max-width: 360px) {
+      .roadmap .timeline-wrap .melnik909 {
+        display: none; } }
+
+.getintouch {
+  height: 50vh; }
