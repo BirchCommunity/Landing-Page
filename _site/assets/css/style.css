@@ -1,7 +1,7 @@
 /* Fonts and Colors */
 @import url("https://fonts.googleapis.com/css?family=Poppins:400,500,00|Roboto:300,400");
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 400;
   height: 100%; }
 
@@ -15,6 +15,19 @@ h1, h2, h3, h4, h5, h6 {
 .section-title {
   padding-top: 30px;
   margin-bottom: 0px; }
+
+.sign-in {
+  text-align: right;
+  color: black;
+  background: #F5F5F5;
+  width: 100%;
+  margin: 0px;
+  padding: 20px; }
+  .sign-in a {
+    color: black; }
+  .sign-in a:hover {
+    color: black;
+    text-decoration: none; }
 
 /*
 * Header styles 
