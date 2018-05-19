@@ -1,12 +1,13 @@
 ---
 ---
 /* Fonts and Colors */
-@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600');
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,00|Roboto:300,400');
 
 
 body {
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
+    height: 100%;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -26,18 +27,17 @@ h1, h2, h3, h4, h5, h6 {
 /*
 * Header styles 
 */
-.dark-header {
+.header {
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#eeeeee+0,cccccc+100;Gren+3D */
 
-    background: #ff7600;
-    background: linear-gradient(90deg, rgba(255,118,0,1) 0%, rgba(255,136,33,1) 75%, rgba(255,161,81,1) 100%);
+    background: #F5F5F5;
 
     height: 100vh;
     width: 100%;
     text-align: center;
 
     h1, h2, h3, h4, h5, h6 {
-        color: white;
+        color: black;
         text-align: center;
         font-family: 'Poppins', sans-serif;
     }
@@ -64,6 +64,66 @@ h1, h2, h3, h4, h5, h6 {
     .title-wrapper {
         display: inline-block;
     }
+
+    .btn-primary{
+      background: #FF7600;
+      border: #FF7600;
+      color: white;
+    }
+}
+
+.signup-form{
+  height: 100vh;
+  background: #F5F5F5;
+}
+
+.email-header{
+  background: #F5F5F5;
+
+  height: 50vh;
+  width: 100%;
+  text-align: center;
+
+  h1, h2, h3, h4, h5, h6 {
+      color: black;
+      text-align: center;
+      font-family: 'Poppins', sans-serif;
+  }
+
+
+  .title {
+      text-align: center;
+      
+      h1 {
+          font-size: 3em;
+          font-weight: 600;
+          width: 100%;
+      }
+      h2 {
+        font-size: 2em;
+      }
+      @media screen and (max-width: 767px) {
+          font-size: .7em;
+      }
+
+      .logo {
+        max-width: 150px;
+      }
+  }
+
+  .title-wrapper {
+      display: inline-block;
+  }
+
+  .btn-primary{
+    background: #FF7600;
+    border: #FF7600;
+    color: white;
+  } 
+}
+
+.email-form {
+  background: #F5F5F5;
 }
 
 

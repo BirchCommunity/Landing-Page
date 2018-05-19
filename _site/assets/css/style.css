@@ -1,8 +1,9 @@
 /* Fonts and Colors */
-@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600");
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,00|Roboto:300,400");
 body {
   font-family: 'Poppins', sans-serif;
-  font-weight: 400; }
+  font-weight: 400;
+  height: 100%; }
 
 h1, h2, h3, h4, h5, h6 {
   text-align: center;
@@ -18,30 +19,69 @@ h1, h2, h3, h4, h5, h6 {
 /*
 * Header styles 
 */
-.dark-header {
+.header {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#eeeeee+0,cccccc+100;Gren+3D */
-  background: #ff7600;
-  background: linear-gradient(90deg, #ff7600 0%, #ff8821 75%, #ffa151 100%);
+  background: #F5F5F5;
   height: 100vh;
   width: 100%;
   text-align: center; }
-  .dark-header h1, .dark-header h2, .dark-header h3, .dark-header h4, .dark-header h5, .dark-header h6 {
-    color: white;
+  .header h1, .header h2, .header h3, .header h4, .header h5, .header h6 {
+    color: black;
     text-align: center;
     font-family: 'Poppins', sans-serif; }
-  .dark-header .title {
+  .header .title {
     text-align: center; }
-    .dark-header .title h1 {
+    .header .title h1 {
       font-size: 5em;
       font-weight: 600;
       width: 100%; }
     @media screen and (max-width: 767px) {
-      .dark-header .title {
+      .header .title {
         font-size: .7em; } }
-    .dark-header .title .logo {
+    .header .title .logo {
       max-width: 200px; }
-  .dark-header .title-wrapper {
+  .header .title-wrapper {
     display: inline-block; }
+  .header .btn-primary {
+    background: #FF7600;
+    border: #FF7600;
+    color: white; }
+
+.signup-form {
+  height: 100vh;
+  background: #F5F5F5; }
+
+.email-header {
+  background: #F5F5F5;
+  height: 50vh;
+  width: 100%;
+  text-align: center; }
+  .email-header h1, .email-header h2, .email-header h3, .email-header h4, .email-header h5, .email-header h6 {
+    color: black;
+    text-align: center;
+    font-family: 'Poppins', sans-serif; }
+  .email-header .title {
+    text-align: center; }
+    .email-header .title h1 {
+      font-size: 3em;
+      font-weight: 600;
+      width: 100%; }
+    .email-header .title h2 {
+      font-size: 2em; }
+    @media screen and (max-width: 767px) {
+      .email-header .title {
+        font-size: .7em; } }
+    .email-header .title .logo {
+      max-width: 150px; }
+  .email-header .title-wrapper {
+    display: inline-block; }
+  .email-header .btn-primary {
+    background: #FF7600;
+    border: #FF7600;
+    color: white; }
+
+.email-form {
+  background: #F5F5F5; }
 
 .problem {
   padding-top: 30px;
