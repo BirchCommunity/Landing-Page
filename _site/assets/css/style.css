@@ -38,6 +38,8 @@ h1, h2, h3, h4, h5, h6 {
     @media screen and (max-width: 767px) {
       .dark-header .title {
         font-size: .7em; } }
+    .dark-header .title .logo {
+      max-width: 200px; }
   .dark-header .title-wrapper {
     display: inline-block; }
 
